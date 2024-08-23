@@ -5,9 +5,8 @@
         static void Main(string[] args)
         {
             string obj = Console.ReadLine();
-   
 
-            Console.WriteLine("Du slog, " + Dice.RollDice(Dice.DICETYPE.D6) + "!");
+            Console.WriteLine("Du slog, " + Dice.RollDice() + "!");
         }
     }
 }
