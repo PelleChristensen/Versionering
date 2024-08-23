@@ -10,7 +10,7 @@ namespace Versionering
     {
         public static int RollDice()
         {
-            return 1; 
+            return Random.Shared.Next(1, 6);
         }
     }
 
