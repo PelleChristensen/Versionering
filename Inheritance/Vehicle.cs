@@ -10,7 +10,7 @@ namespace Versionering.Inheritance
     internal class Vehicle
     {
         private string _brand;
-
+        private string _name;
         public string Brand { get => _brand; set => _brand = value; }
     }
 }
