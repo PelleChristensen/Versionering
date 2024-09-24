@@ -1,4 +1,7 @@
-﻿namespace Versionering
+﻿using System.Linq.Expressions;
+using Versionering.Inheritance;
+
+namespace Versionering
 {
     internal class Program
     {
@@ -6,7 +9,16 @@
         {
             string obj = Console.ReadLine();
 
-            Console.WriteLine("Du slog, " + Dice.RollDice() + "!");
+            Backpack bp = new Backpack(10);
+            Cheese c = new Cheese(2, "Manchego");
+            Gem g = new Gem(4,1, "Jade");
+
+            bp.AddItem(c);
+            bp.AddItem(g);
+
+            bp.ListItems();
+
+
         }
     }
 }
