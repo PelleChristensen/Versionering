@@ -9,5 +9,9 @@ namespace Versionering.Inheritance
     internal class HealingPotion
     {
         int bonus = 10; 
+
+        public int Bonus { get { return bonus; } private set { bonus = value; } }
+
+        public HealingPotion() { }
     }
 }
