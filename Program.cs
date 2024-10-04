@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using Versionering.Cinema;
 using Versionering.Inheritance;
 
 namespace Versionering
@@ -7,18 +8,11 @@ namespace Versionering
     {
         static void Main(string[] args)
         {
-            string obj = Console.ReadLine();
+            CinemaHall hall;
 
-            Backpack bp = new Backpack(10);
-            Cheese c = new Cheese(2, "Manchego");
-            Gem g = new Gem(4,1, "Jade");
+            hall = new CinemaHall(12, 12);
 
-            bp.AddItem(c);
-            bp.AddItem(g);
-
-            bp.ListItems();
-
-
+            hall.IsSeatTaken(10, 10);
         }
     }
 }
